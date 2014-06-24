@@ -479,14 +479,14 @@ public class SshAdapter implements InputListener, Term {
 
 	private char getCharFromKeyCode(int key, boolean shift, boolean ctrl,
 		 boolean alt, boolean meta) {
-	/*	char c = (char) key;
+		char c = (char) key;
 		if (!shift) {
 			if (key >= KeyEvent.VK_A && key <= KeyEvent.VK_Z) {
 				// A -> a
 				c += 32;
 			}
 		}
-		return c; */
+		return c; /*
 		        char c = (char) key;
              if(c == 'A') c = 'Q';
         else if(c == 'Q') c = 'A';
@@ -566,7 +566,7 @@ KeyEvent.VK_Z) {
                 c += 32;
             }
         }
-        return c;
+        return c;*/
 	}
 
 	@Override
