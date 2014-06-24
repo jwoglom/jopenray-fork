@@ -9,6 +9,49 @@ public class RDPKeymap {
 	 * */
 	public static int getScancode(int keyCode) {
 		int scancode;
+		/*
+ 1
+ bksp=
+ qa
+ wz..
+ \[enter]
+ ;m
+ 'ù
+ [enter]*
+
+ zw
+ m,
+ 1paragraph sign
+ numpad 2: shift
+ 3*
+ 4alt
+ 5space
+
+ */
+ int[] m = new int[]{
+ 	KeyEvent.VK_DEAD_TILDE,
+	KeyEvent.VK_1,
+	KeyEvent.VK_2,
+	KeyEvent.VK_3,
+	KeyEvent.VK_4,
+	KeyEvent.VK_5,
+	KeyEvent.VK_6,
+	KeyEvent.VK_7,
+	KeyEvent.VK_8,
+	KeyEvent.VK_9,
+	KeyEvent.VK_0,
+	0,
+	0,
+	KeyEvent.VK_BACK_SPACE,
+	0, //caps lock
+	KeyEvent.VK_TAB
+
+ };
+
+for(int i=0; i<m.length; i++) {
+	if(m[i] == keyCode) return i;
+}
+/*
 		switch (keyCode) {
 		
 		case KeyEvent.VK_1:
@@ -182,6 +225,6 @@ public class RDPKeymap {
 			scancode = 0;
 			break;
 		}
-		return scancode;
+		return scancode;*/
 	}
 }
