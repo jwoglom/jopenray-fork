@@ -30,23 +30,23 @@ public class RDPKeymap {
  */
  int[] m = new int[]{
  	KeyEvent.VK_DEAD_TILDE,
-	KeyEvent.VK_1,
-	KeyEvent.VK_2,
-	KeyEvent.VK_3,
-	KeyEvent.VK_4,
-	KeyEvent.VK_5,
-	KeyEvent.VK_6,
-	KeyEvent.VK_7,
-	KeyEvent.VK_8,
-	KeyEvent.VK_9,
-	KeyEvent.VK_0,
+	KeyEvent.VK_ESC,//esc
+	KeyEvent.VK_AMPERSAND,//&
+	KeyEvent.VK_3,//accented
+	KeyEvent.VK_4,//doublequote
+	KeyEvent.VK_5,//singlequote
+	KeyEvent.VK_6,//(
+	KeyEvent.VK_7,//-
+	KeyEvent.VK_8,//è
+	KeyEvent.VK_9,//_
+	KeyEvent.VK_0,//ç
 	0,
 	0,
-	KeyEvent.VK_BACK_SPACE,
+	KeyEvent.VK_BACK_SPACE,//=
 	0, //tab
 	KeyEvent.VK_TAB,
-	KeyEvent.VK_Q,
-	KeyEvent.VK_W,
+	KeyEvent.VK_Q,//a
+	KeyEvent.VK_W,//z
 	KeyEvent.VK_E,
 	KeyEvent.VK_R,
 	KeyEvent.VK_T,
@@ -57,9 +57,9 @@ public class RDPKeymap {
 	KeyEvent.VK_P,
 	KeyEvent.VK_BRACELEFT,
 	KeyEvent.VK_BRACERIGHT,
-	KeyEvent.VK_BACK_SLASH,
+	KeyEvent.VK_BACK_SLASH,//enter
 	0, //caps lock
-	KeyEvent.VK_A,
+	KeyEvent.VK_A,//q
 	KeyEvent.VK_S,
 	KeyEvent.VK_D,
 	KeyEvent.VK_F,
@@ -68,30 +68,29 @@ public class RDPKeymap {
 	KeyEvent.VK_J,
 	KeyEvent.VK_K,
 	KeyEvent.VK_L,
-	KeyEvent.VK_SEMICOLON,
-//	KeyEvent.VK_COLON,
-	KeyEvent.VK_QUOTE,
+	KeyEvent.VK_SEMICOLON,//m
+	KeyEvent.VK_QUOTE,//ù
 	0, //;
 	0, //'
-	KeyEvent.VK_ENTER,
-	KeyEvent.VK_Z,
+	KeyEvent.VK_ENTER,//*
+	KeyEvent.VK_Z,//w
 	KeyEvent.VK_X,
 	KeyEvent.VK_C,
 	KeyEvent.VK_V,
 	KeyEvent.VK_B,
 	KeyEvent.VK_N,
-	KeyEvent.VK_M,
-	KeyEvent.VK_COMMA,
+	KeyEvent.VK_M,//comma
+	KeyEvent.VK_COMMA,//semicolon
 	0,
-	KeyEvent.VK_NUMPAD1,
-	KeyEvent.VK_NUMPAD2,
-	KeyEvent.VK_NUMPAD3,
-	KeyEvent.VK_NUMPAD4,
-	KeyEvent.VK_NUMPAD5,
-	KeyEvent.VK_NUMPAD6,
-	KeyEvent.VK_NUMPAD7,
-	KeyEvent.VK_NUMPAD8,
-	KeyEvent.VK_NUMPAD9
+	KeyEvent.VK_NUMPAD1,//!
+	KeyEvent.VK_NUMPAD2,//shift
+	KeyEvent.VK_NUMPAD3,//*
+	KeyEvent.VK_NUMPAD4,//alt
+	KeyEvent.VK_NUMPAD5,//space
+	KeyEvent.VK_NUMPAD6,//capslock
+	KeyEvent.VK_NUMPAD7,//nothing
+	KeyEvent.VK_NUMPAD8,//nothing
+	KeyEvent.VK_NUMPAD9//nothing
 
  };
 
