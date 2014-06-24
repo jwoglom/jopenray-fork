@@ -43,14 +43,65 @@ public class RDPKeymap {
 	0,
 	0,
 	KeyEvent.VK_BACK_SPACE,
+	0, //tab
+	KeyEvent.VK_TAB,
+	KeyEvent.VK_Q,
+	KeyEvent.VK_W,
+	KeyEvent.VK_E,
+	KeyEvent.VK_R,
+	KeyEvent.VK_T,
+	KeyEvent.VK_Y,
+	KeyEvent.VK_U,
+	KeyEvent.VK_I,
+	KeyEvent.VK_O,
+	KeyEvent.VK_P,
+	KeyEvent.VK_BRACELEFT,
+	KeyEvent.VK_BRACERIGHT,
+	KeyEvent.VK_BACK_SLASH,
 	0, //caps lock
-	KeyEvent.VK_TAB
+	KeyEvent.VK_A,
+	KeyEvent.VK_S,
+	KeyEvent.VK_D,
+	KeyEvent.VK_F,
+	KeyEvent.VK_G,
+	KeyEvent.VK_H,
+	KeyEvent.VK_J,
+	KeyEvent.VK_K,
+	KeyEvent.VK_L,
+	KeyEvent.VK_SEMICOLON,
+//	KeyEvent.VK_COLON,
+	KeyEvent.VK_QUOTE,
+	0, //;
+	0, //'
+	KeyEvent.VK_ENTER,
+	KeyEvent.VK_Z,
+	KeyEvent.VK_X,
+	KeyEvent.VK_C,
+	KeyEvent.VK_V,
+	KeyEvent.VK_B,
+	KeyEvent.VK_N,
+	KeyEvent.VK_M,
+	KeyEvent.VK_COMMA,
+	0,
+	KeyEvent.VK_NUMPAD1,
+	KeyEvent.VK_NUMPAD2,
+	KeyEvent.VK_NUMPAD3,
+	KeyEvent.VK_NUMPAD4,
+	KeyEvent.VK_NUMPAD5,
+	KeyEvent.VK_NUMPAD6,
+	KeyEvent.VK_NUMPAD7,
+	KeyEvent.VK_NUMPAD8,
+	KeyEvent.VK_NUMPAD9
 
  };
 
-for(int i=0; i<m.length; i++) {
-	if(m[i] == keyCode) return i;
+for(int i=1; i<m.length; i++) {
+	if(m[i] == keyCode) {
+		System.out.println("**\n*\n*\n*keyCode "+keyCode+" i "+i+" mi "+m[i]);
+		return i;
+	}
 }
+return 0;
 /*
 		switch (keyCode) {
 		
